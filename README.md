@@ -4,7 +4,22 @@ This is a simple maven java application which fetches tweets using [Twitter API]
 # Setting Up.
 
 1. Setting up maven 
-    * [Install Maven](http://maven.apache.org/install.html). 
+    
+    * Install Maven by following this link - [Install Maven](http://maven.apache.org/install.html). 
+        * Locate JAVA_HOME Variable either in ~/.bash\* or /etc/ folder by using 
+        
+        `grep JAVA_HOME /etc/ ~/.bash*`.
+        
+        If not present, set JAVA_HOME to directory where JDK is installed. 
+        
+        * While Adding maven bin directory to PATH environment, locate ~/.profile and change PATH to: 
+        
+        `PATH="$HOME/bin:$PATH:<Path-toMaven-bin>"` 
+        
+        and finally
+        
+        `export PATH=$PATH:/usr/hitech/picc/9.82/bin`
+        
 2. Clone [tw-maven git](https://github.com/t6nand/tw-maven) repository.
 3. Set up a twitter app [here](https://apps.twitter.com/).
 4. Create Oauth Access Token and Access Token Secret as they are needed for authenticating application.
