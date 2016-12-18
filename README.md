@@ -21,7 +21,7 @@ oauth.accessTokenSecret=
 7. Run :
     `mvn clean install`
     
-    to install all dependencies.
+    to install all dependencies. This step may take time when running for the first time.
     
 8. Finally use deploy script provided at root folder of project by using your favourite shell. 
     For example in bash : `bash deploy.sh`
