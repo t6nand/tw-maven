@@ -14,7 +14,7 @@ import java.util.ArrayList;
  * 2. Contains the hashtag #custserv.
  */
 public class TWCustServ {
-    final Twitter twitter = new TWAuth().getTwitterInstance();
+    private final Twitter TWITTER = new TWAuth().getTwitterInstance();
     private final String HASHTAG_OF_INTEREST = "#custserv";
     private static long tweetID = Long.MAX_VALUE;
     /**
@@ -32,7 +32,7 @@ public class TWCustServ {
             query.setMaxId(tweetID -1);
         }
         try {
-            QueryResult result = twitter.search(query);
+            QueryResult result = TWITTER.search(query);
             tweets = (ArrayList) result.getTweets();
         } catch (TwitterException t) {
             t.printStackTrace();
