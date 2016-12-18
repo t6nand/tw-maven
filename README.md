@@ -43,7 +43,7 @@ This is a maven java cli application with directory layout and code structure as
 |             |_managers (Twitter oauth manager and search manager classes)
 |             |        |_TWAuth.java
 |             |        |_TWCustServ.java     
-|             |_twconstants (Class to load configuraton)
+|             |_twconstants (Contains classes to load configuraton)
 |             |        |_LoadTwitterConfig.java
 |             |
 |             |_resources (All resource and application specific conf files goes here)
